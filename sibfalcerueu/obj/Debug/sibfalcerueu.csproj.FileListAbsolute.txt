@@ -18,3 +18,4 @@ C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sib
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Debug\sibfalcerueu.DataPegawai.resources
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Debug\sibfalcerueu.DataSupplier.resources
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Debug\sibfalcerueu.DataUser.resources
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Debug\sibfalcerueu.BarangMasuk.resources

@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarangMasuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarangMasuk.Designer.cs">
+      <DependentUpon>BarangMasuk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Beranda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <Compile Include="DataBarang.Designer.cs">
       <DependentUpon>DataBarang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BarangMasuk.resx">
+      <DependentUpon>BarangMasuk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Beranda.resx">
       <DependentUpon>Beranda.cs</DependentUpon>
     </EmbeddedResource>
