@@ -205,6 +205,7 @@
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(806, 173);
             this.metroGrid1.TabIndex = 74;
+            this.metroGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellClick_1);
             // 
             // txtnama
             // 

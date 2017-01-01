@@ -26,11 +26,10 @@ namespace sibfalcerueu
         DataTable dt = new DataTable();
         DataTable dt1 = new DataTable();
         DataTable dt2 = new DataTable();
-        Timer t1 = new Timer();
         //open connection to database
         private bool OpenConnection()
         {
-            string connstring = "server=localhost;database=sbduas3;uid=root;pwd=;";
+                        string connstring = "server=" + SetDB.server + ";database=" + SetDB.nama + ";uid=" + SetDB.uid + ";pwd=" + SetDB.pass + ";";
             try
             {
                 conn = new MySqlConnection(connstring);
@@ -239,11 +238,6 @@ namespace sibfalcerueu
         }
         private void DataKategoriBarang_Load(object sender, EventArgs e)
         {
-            Opacity = 0;      //first the opacity is 0
-
-            t1.Interval = 10;  //we'll increase the opacity every 10ms
-            t1.Tick += new EventHandler(fadeIn);  //this calls the function that changes opacity 
-            t1.Start();
             Select();
             IsiCombobox();
             btnbatal.Visible = false;
@@ -332,34 +326,8 @@ namespace sibfalcerueu
                 Insert();
             }
         }
-        void fadeIn(object sender, EventArgs e)
-        {
-            if (Opacity >= 1)
-                t1.Stop();   //this stops the timer if the form is completely displayed
-            else
-                Opacity += 0.05;
-        }
-
         private void DataKategoriBarang_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;    //cancel the event so the form won't be closed
-            t1.Tick += new EventHandler(fadeOut);  //this calls the fade out function
-            t1.Start();
-
-            if (Opacity == 0)  //if the form is completly transparent
-                e.Cancel = false;   //resume the event - the program can be closed
-        }
-        void fadeOut(object sender, EventArgs e)
-        {
-            if (Opacity <= 0)     //check if opacity is 0
-            {
-                t1.Stop();    //if it is, we stop the timer
-                Close();   //and we try to close the form
-            }
-            else
-            {
-                Opacity -= 0.05;
-            }
         }
 
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -368,6 +336,15 @@ namespace sibfalcerueu
             {
                 Search();
             }
+        }
+
+        private void metroGrid1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            //gets a collection that contains all the rows
+            DataGridViewRow row = this.metroGrid1.Rows[e.RowIndex];
+            //populate the textbox from specific value of the coordinates of column and row.
+            txtkode.Text = row.Cells[0].Value.ToString();
+            txtnama.Text = row.Cells[1].Value.ToString();
         }
     }
 }

@@ -44,11 +44,13 @@
             this.metroTile10 = new MetroFramework.Controls.MetroTile();
             this.metroTile11 = new MetroFramework.Controls.MetroTile();
             this.metroTile12 = new MetroFramework.Controls.MetroTile();
-            this.level = new MetroFramework.Controls.MetroLabel();
+            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTile13 = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
+            this.metroTabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -56,9 +58,10 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
+            this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Location = new System.Drawing.Point(23, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(606, 275);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -170,6 +173,7 @@
             this.metroTile7.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile7.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTile7.UseSelectable = true;
+            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
             // 
             // metroTile6
             // 
@@ -182,6 +186,7 @@
             this.metroTile6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile6.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile6.UseSelectable = true;
+            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
             // 
             // metroTabPage3
             // 
@@ -212,6 +217,7 @@
             this.metroTile8.Text = "Laporan Barang Keluar";
             this.metroTile8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile8.UseSelectable = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
             // 
             // metroTile9
             // 
@@ -223,6 +229,7 @@
             this.metroTile9.Text = "Laporan Supplier";
             this.metroTile9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile9.UseSelectable = true;
+            this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
             // 
             // metroTile10
             // 
@@ -234,6 +241,7 @@
             this.metroTile10.Text = "Laporan Barang Masuk";
             this.metroTile10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile10.UseSelectable = true;
+            this.metroTile10.Click += new System.EventHandler(this.metroTile10_Click);
             // 
             // metroTile11
             // 
@@ -245,6 +253,7 @@
             this.metroTile11.Text = "Laporan Pegawai";
             this.metroTile11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile11.UseSelectable = true;
+            this.metroTile11.Click += new System.EventHandler(this.metroTile11_Click);
             // 
             // metroTile12
             // 
@@ -256,34 +265,50 @@
             this.metroTile12.Text = "Laporan Barang";
             this.metroTile12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile12.UseSelectable = true;
+            this.metroTile12.Click += new System.EventHandler(this.metroTile12_Click);
             // 
-            // level
+            // metroTabPage4
             // 
-            this.level.AutoSize = true;
-            this.level.ForeColor = System.Drawing.Color.White;
-            this.level.Location = new System.Drawing.Point(383, 31);
-            this.level.Name = "level";
-            this.level.Size = new System.Drawing.Size(0, 0);
-            this.level.TabIndex = 1;
-            this.level.UseCustomBackColor = true;
-            this.level.UseCustomForeColor = true;
+            this.metroTabPage4.Controls.Add(this.metroTile13);
+            this.metroTabPage4.HorizontalScrollbarBarColor = true;
+            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.HorizontalScrollbarSize = 10;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage4.Name = "metroTabPage4";
+            this.metroTabPage4.Size = new System.Drawing.Size(598, 233);
+            this.metroTabPage4.TabIndex = 3;
+            this.metroTabPage4.Text = "Administrator";
+            this.metroTabPage4.VerticalScrollbarBarColor = true;
+            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
+            // 
+            // metroTile13
+            // 
+            this.metroTile13.ActiveControl = null;
+            this.metroTile13.Location = new System.Drawing.Point(3, 17);
+            this.metroTile13.Name = "metroTile13";
+            this.metroTile13.Size = new System.Drawing.Size(219, 82);
+            this.metroTile13.TabIndex = 2;
+            this.metroTile13.Text = "Data User";
+            this.metroTile13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile13.UseSelectable = true;
             // 
             // Beranda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 353);
-            this.Controls.Add(this.level);
             this.Controls.Add(this.metroTabControl1);
             this.MaximizeBox = false;
             this.Name = "Beranda";
             this.Text = "Beranda";
+            this.Load += new System.EventHandler(this.Beranda_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage3.ResumeLayout(false);
+            this.metroTabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -305,6 +330,7 @@
         private MetroFramework.Controls.MetroTile metroTile10;
         private MetroFramework.Controls.MetroTile metroTile11;
         private MetroFramework.Controls.MetroTile metroTile12;
-        private MetroFramework.Controls.MetroLabel level;
+        private MetroFramework.Controls.MetroTabPage metroTabPage4;
+        private MetroFramework.Controls.MetroTile metroTile13;
     }
 }

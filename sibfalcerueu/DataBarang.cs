@@ -22,7 +22,6 @@ namespace sibfalcerueu
         DataTable dt = new DataTable();
         DataTable dt1 = new DataTable();
         DataTable dt2 = new DataTable();
-        Timer t1 = new Timer();
 
         public DataBarang()
         {
@@ -31,7 +30,7 @@ namespace sibfalcerueu
         //open connection to database
         private bool OpenConnection()
         {
-            string connstring = "server=localhost;database=sbduas3;uid=root;pwd=;";
+                        string connstring = "server=" + SetDB.server + ";database=" + SetDB.nama + ";uid=" + SetDB.uid + ";pwd=" + SetDB.pass + ";";
             try
             {
                 conn = new MySqlConnection(connstring);
@@ -250,7 +249,7 @@ namespace sibfalcerueu
             Dictionary<string, string> test = new Dictionary<string, string>();
             test.Add("kode", "Kode Barang");
             test.Add("nama", "Nama Barang");
-            test.Add("id_kategori", "Kode Kategori");
+            test.Add("kategori", "Kode Kategori");
             test.Add("id_supplier", "Kode Supplier");
             metroComboBox1.DataSource = new BindingSource(test, null);
             metroComboBox1.DisplayMember = "Value";
@@ -442,8 +441,8 @@ namespace sibfalcerueu
             txtnama.Text = row.Cells[1].Value.ToString();
             txtkategori.Text = row.Cells[2].Value.ToString();
             txtstok.Text = row.Cells[3].Value.ToString();
-            txtstokmin.Text = row.Cells[4].Value.ToString();
-            txtsupplier.Text = row.Cells[5].Value.ToString();
+            txtstokmin.Text = row.Cells[5].Value.ToString();
+            txtsupplier.Text = row.Cells[4].Value.ToString();
         }
 
         private void btnsdelete_Click(object sender, EventArgs e)
@@ -468,16 +467,12 @@ namespace sibfalcerueu
         }
         private void DataBarang_Load(object sender, EventArgs e)
         {
-            Opacity = 0;      //first the opacity is 0
-
-            t1.Interval = 10;  //we'll increase the opacity every 10ms
-            t1.Tick += new EventHandler(fadeIn);  //this calls the function that changes opacity 
-            t1.Start();
             Select();
             Select2();
             Select3();
             IsiCombobox();
             metroPanel1.Visible = false;
+            metroPanel2.Visible = false;
             btnbatal.Visible = false;
             btnsupdate.Visible = false;
         }
@@ -487,36 +482,10 @@ namespace sibfalcerueu
             this.Close();
         }
 
-        void fadeIn(object sender, EventArgs e)
-        {
-            if (Opacity >= 1)
-                t1.Stop();   //this stops the timer if the form is completely displayed
-            else
-                Opacity += 0.05;
-        }
-
         private void DataBarang_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;    //cancel the event so the form won't be closed
-            t1.Tick += new EventHandler(fadeOut);  //this calls the fade out function
-            t1.Start();
 
-            if (Opacity == 0)  //if the form is completly transparent
-                e.Cancel = false;   //resume the event - the program can be closed
         }
-        void fadeOut(object sender, EventArgs e)
-        {
-            if (Opacity <= 0)     //check if opacity is 0
-            {
-                t1.Stop();    //if it is, we stop the timer
-                Close();   //and we try to close the form
-            }
-            else
-            {
-                Opacity -= 0.05;
-            }
-        }
-
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtsearch.Text != "")
@@ -533,6 +502,32 @@ namespace sibfalcerueu
         private void txtsupplier_Enter(object sender, EventArgs e)
         {
             visiblepanel("panel1");
+        }
+
+        private void metroPanel1_VisibleChanged(object sender, EventArgs e)
+        {
+            if(metroPanel1.Visible == true)
+            {
+                txtkategori.Visible = false;
+                //metroPanel1.Visible = false;
+            }
+            else
+            {
+                txtkategori.Visible = true;
+            }
+        }
+
+        private void metroPanel2_VisibleChanged(object sender, EventArgs e)
+        {
+            if (metroPanel2.Visible == true)
+            {
+                txtsupplier.Visible = false;
+               // metroPanel1.Visible = false;
+            }
+            else
+            {
+                txtsupplier.Visible = true;
+            }
         }
     }
 }

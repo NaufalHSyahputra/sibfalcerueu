@@ -274,6 +274,7 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VisibleChanged += new System.EventHandler(this.metroPanel1_VisibleChanged);
             this.metroPanel1.MouseLeave += new System.EventHandler(this.metroPanel1_MouseLeave);
             // 
             // groupBox2
@@ -477,6 +478,7 @@
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
+            this.metroPanel2.VisibleChanged += new System.EventHandler(this.metroPanel2_VisibleChanged);
             this.metroPanel2.MouseLeave += new System.EventHandler(this.metroPanel2_MouseLeave);
             // 
             // groupBox4

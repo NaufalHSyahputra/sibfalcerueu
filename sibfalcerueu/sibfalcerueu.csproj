@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sibfalcerueu</RootNamespace>
     <AssemblyName>sibfalcerueu</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MetroFramework">
       <HintPath>..\..\..\..\..\Downloads\METRO DLL\MetroFramework.dll</HintPath>
     </Reference>
@@ -45,6 +55,8 @@
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarangKeluar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarangKeluar.Designer.cs">
+      <DependentUpon>BarangKeluar.cs</DependentUpon>
+    </Compile>
     <Compile Include="BarangMasuk.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +85,96 @@
     </Compile>
     <Compile Include="Beranda.Designer.cs">
       <DependentUpon>Beranda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1 - Copy - Copy.cs">
+      <DependentUpon>LaporanBarangMasukPerTanggal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalReport1 - Copy.cs">
+      <DependentUpon>LaporanBarangMasukPerPeriode.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarF.Designer.cs">
+      <DependentUpon>LaporanBarangKeluarF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarPerPeriodeF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarPerPeriodeF.Designer.cs">
+      <DependentUpon>LaporanBarangKeluarPerPeriodeF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarPerTanggal.cs">
+      <DependentUpon>LaporanBarangKeluarPerTanggal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarPerPeriode.cs">
+      <DependentUpon>LaporanBarangKeluarPerPeriode.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LaporanBarangKeluar.cs">
+      <DependentUpon>LaporanBarangKeluar.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarPerTanggalF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangKeluarPerTanggalF.Designer.cs">
+      <DependentUpon>LaporanBarangKeluarPerTanggalF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBarangMasuk.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaporanBarangMasuk.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangKeluar1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangKeluar1.Designer.cs">
+      <DependentUpon>LaporanBarangKeluar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBarangMasuk1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangMasuk1.Designer.cs">
+      <DependentUpon>LaporanBarangMasuk1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBarangMasukF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangMasukF.Designer.cs">
+      <DependentUpon>LaporanBarangMasukF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBarangMasukPerTanggal.cs">
+      <DependentUpon>LaporanBarangMasukPerTanggal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="LaporanBarangMasukPerPeriodeF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangMasukPerPeriodeF.Designer.cs">
+      <DependentUpon>LaporanBarangMasukPerPeriodeF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBarangMasukPerPeriode.cs">
+      <DependentUpon>LaporanBarangMasukPerPeriode.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="DataBagianPegawai.cs">
       <SubType>Form</SubType>
@@ -98,6 +206,18 @@
     <Compile Include="DataUser.Designer.cs">
       <DependentUpon>DataUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="LaporanBarangMasukPerTanggalF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBarangMasukPerTanggalF.Designer.cs">
+      <DependentUpon>LaporanBarangMasukPerTanggalF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataBarang.cs">
@@ -106,11 +226,101 @@
     <Compile Include="DataBarang.Designer.cs">
       <DependentUpon>DataBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportBarang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportBarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportBarangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBarangForm.Designer.cs">
+      <DependentUpon>ReportBarangForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSupplier.cs">
+      <DependentUpon>ReportSupplier.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportPegawai.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportPegawai.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportPegawaiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPegawaiForm.Designer.cs">
+      <DependentUpon>ReportPegawaiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSupplierForm.Designer.cs">
+      <DependentUpon>ReportSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetDB.Designer.cs">
+      <DependentUpon>SetDB.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BarangKeluar.resx">
+      <DependentUpon>BarangKeluar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BarangMasuk.resx">
       <DependentUpon>BarangMasuk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Beranda.resx">
       <DependentUpon>Beranda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangKeluarF.resx">
+      <DependentUpon>LaporanBarangKeluarF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangKeluarPerPeriodeF.resx">
+      <DependentUpon>LaporanBarangKeluarPerPeriodeF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangKeluarPerTanggal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanBarangKeluarPerTanggal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangKeluarPerPeriode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanBarangKeluarPerPeriode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangKeluar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanBarangKeluar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangKeluarPerTanggalF.resx">
+      <DependentUpon>LaporanBarangKeluarPerTanggalF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangKeluar1.resx">
+      <DependentUpon>LaporanBarangKeluar1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasuk1.resx">
+      <DependentUpon>LaporanBarangMasuk1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasukF.resx">
+      <DependentUpon>LaporanBarangMasukF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasukPerTanggal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanBarangMasukPerTanggal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasukPerPeriodeF.resx">
+      <DependentUpon>LaporanBarangMasukPerPeriodeF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasukPerPeriode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanBarangMasukPerPeriode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasuk.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanBarangMasuk.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="DataBagianPegawai.resx">
       <DependentUpon>DataBagianPegawai.cs</DependentUpon>
@@ -130,10 +340,40 @@
     <EmbeddedResource Include="DataUser.resx">
       <DependentUpon>DataUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasukPerTanggalF.resx">
+      <DependentUpon>LaporanBarangMasukPerTanggalF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportBarang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBarangForm.resx">
+      <DependentUpon>ReportBarangForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSupplier.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSupplier.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPegawai.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportPegawai.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPegawaiForm.resx">
+      <DependentUpon>ReportPegawaiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSupplierForm.resx">
+      <DependentUpon>ReportSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetDB.resx">
+      <DependentUpon>SetDB.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -156,12 +396,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\logo.jpg" />
     <None Include="Resources\images.png" />
     <None Include="Resources\document-xl.png" />
     <None Include="Resources\new_file.png" />
     <None Include="Resources\plus-logo-icon-27956.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

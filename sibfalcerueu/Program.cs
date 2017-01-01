@@ -16,7 +16,7 @@ namespace sibfalcerueu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BarangMasuk());
+            Application.Run(new SetDB());
         }
     }
 }

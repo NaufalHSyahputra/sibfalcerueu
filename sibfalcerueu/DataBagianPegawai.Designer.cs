@@ -415,9 +415,9 @@
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "DataBagianPegawai";
             this.Text = "DataBagianPegawai";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DataBagianPegawai_FormClosing);
             this.Load += new System.EventHandler(this.DataBagianPegawai_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).EndInit();

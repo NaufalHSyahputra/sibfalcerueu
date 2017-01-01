@@ -527,6 +527,7 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txtkode);
             this.Controls.Add(this.metroLabel1);
+            this.MaximizeBox = false;
             this.Name = "DataPegawai";
             this.Text = "DataPegawai";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DataPegawai_FormClosing);
