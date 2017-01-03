@@ -529,7 +529,7 @@
             this.Controls.Add(this.metroLabel1);
             this.MaximizeBox = false;
             this.Name = "DataPegawai";
-            this.Text = "DataPegawai";
+            this.Text = "Data Pegawai";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DataPegawai_FormClosing);
             this.Load += new System.EventHandler(this.DataPegawai_Load);
             this.groupBox3.ResumeLayout(false);

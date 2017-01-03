@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using MetroFramework.Forms;
 using MetroFramework;
 using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace sibfalcerueu
 {
@@ -17,6 +18,14 @@ namespace sibfalcerueu
         public LaporanBarangMasukPerTanggalF()
         {
             InitializeComponent();
+        }
+        ConnectionInfo crConnectionInfo = new ConnectionInfo();
+        private void LaporanBarangMasukPerTanggalF_Load(object sender, EventArgs e)
+        {
+            crConnectionInfo.ServerName = SetDB.server;
+            crConnectionInfo.DatabaseName = SetDB.nama;
+            crConnectionInfo.UserID = SetDB.uid;
+            crConnectionInfo.Password = SetDB.pass;
         }
     }
 }

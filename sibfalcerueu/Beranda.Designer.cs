@@ -301,7 +301,7 @@
             this.Controls.Add(this.metroTabControl1);
             this.MaximizeBox = false;
             this.Name = "Beranda";
-            this.Text = "Beranda";
+            this.Text = "HomePage";
             this.Load += new System.EventHandler(this.Beranda_Load);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);

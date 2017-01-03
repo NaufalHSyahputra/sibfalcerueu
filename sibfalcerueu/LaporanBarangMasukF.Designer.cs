@@ -54,6 +54,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "LaporanBarangMasukF";
             this.Text = "Laporan Barang Masuk";
+            this.Load += new System.EventHandler(this.LaporanBarangMasukF_Load);
             this.ResumeLayout(false);
 
         }

@@ -53,7 +53,8 @@
             this.ClientSize = new System.Drawing.Size(902, 451);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "ReportSupplierForm";
-            this.Text = "ReportSupplierForm";
+            this.Text = "Laporan Supplier";
+            this.Load += new System.EventHandler(this.ReportSupplierForm_Load);
             this.ResumeLayout(false);
 
         }

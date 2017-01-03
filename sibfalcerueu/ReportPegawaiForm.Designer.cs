@@ -46,14 +46,14 @@
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // ReportPegwaiForm
+            // ReportPegawaiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 382);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "ReportPegwaiForm";
-            this.Text = "ReportPegwaiForm";
+            this.Name = "ReportPegawaiForm";
+            this.Text = "Laporan Pegawai";
             this.Load += new System.EventHandler(this.ReportPegwaiForm_Load);
             this.ResumeLayout(false);
 

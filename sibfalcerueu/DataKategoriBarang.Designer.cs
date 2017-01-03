@@ -326,7 +326,7 @@
             this.Name = "DataKategoriBarang";
             this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
-            this.Text = "DataKategoriBarang";
+            this.Text = "Data Kategori Barang";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DataKategoriBarang_FormClosing);
             this.Load += new System.EventHandler(this.DataKategoriBarang_Load);
             this.groupBox3.ResumeLayout(false);

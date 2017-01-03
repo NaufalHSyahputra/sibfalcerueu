@@ -19,6 +19,14 @@ namespace sibfalcerueu
         {
             InitializeComponent();
         }
+        ConnectionInfo crConnectionInfo = new ConnectionInfo();
+        private void LaporanBarangMasukPerPeriodeF_Load(object sender, EventArgs e)
+        {
+            crConnectionInfo.ServerName = SetDB.server;
+            crConnectionInfo.DatabaseName = SetDB.nama;
+            crConnectionInfo.UserID = SetDB.uid;
+            crConnectionInfo.Password = SetDB.pass;
+        }
     }
     }
 

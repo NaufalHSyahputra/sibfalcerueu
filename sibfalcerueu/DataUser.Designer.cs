@@ -482,7 +482,7 @@
             this.Controls.Add(this.metroLabel1);
             this.MaximizeBox = false;
             this.Name = "DataUser";
-            this.Text = "DataUser";
+            this.Text = "Data User Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DataUser_FormClosing);
             this.Load += new System.EventHandler(this.DataUser_Load);
             this.groupBox3.ResumeLayout(false);

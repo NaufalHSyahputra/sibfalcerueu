@@ -53,7 +53,8 @@
             this.ClientSize = new System.Drawing.Size(895, 386);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "LaporanBarangKeluarF";
-            this.Text = "LaporanBarangKeluarF";
+            this.Text = "Laporan Barang Keluar";
+            this.Load += new System.EventHandler(this.LaporanBarangKeluarF_Load);
             this.ResumeLayout(false);
 
         }

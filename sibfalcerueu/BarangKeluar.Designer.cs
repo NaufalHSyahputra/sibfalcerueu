@@ -596,7 +596,7 @@
             this.Controls.Add(this.metroLabel1);
             this.MaximizeBox = false;
             this.Name = "BarangKeluar";
-            this.Text = "BarangKeluar";
+            this.Text = "Transaksi Barang Keluar";
             this.Load += new System.EventHandler(this.BarangKeluar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid3)).EndInit();
             this.groupBox4.ResumeLayout(false);
