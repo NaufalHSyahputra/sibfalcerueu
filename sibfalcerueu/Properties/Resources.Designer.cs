@@ -63,16 +63,6 @@ namespace sibfalcerueu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap document_xl {
-            get {
-                object obj = ResourceManager.GetObject("document-xl", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -96,16 +86,6 @@ namespace sibfalcerueu.Properties {
         internal static System.Drawing.Bitmap new_file {
             get {
                 object obj = ResourceManager.GetObject("new_file", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap plus_logo_icon_27956 {
-            get {
-                object obj = ResourceManager.GetObject("plus-logo-icon-27956", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

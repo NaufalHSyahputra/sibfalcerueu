@@ -1,6 +1,3 @@
-C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\sibfalcerueu.exe.config
-C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\sibfalcerueu.exe
-C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\sibfalcerueu.pdb
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\CrystalDecisions.ReportSource.dll
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\CrystalDecisions.Shared.dll
@@ -53,5 +50,8 @@ C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sib
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\sibfalcerueu.ReportSupplierForm.resources
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\sibfalcerueu.SetDB.resources
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\sibfalcerueu.csproj.GenerateResource.Cache
-C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\sibfalcerueu.exe
-C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\sibfalcerueu.pdb
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\Sistem Informasi Barang.exe.config
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\Sistem Informasi Barang.exe
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\Sistem Informasi Barang.pdb
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\Sistem Informasi Barang.exe
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\Sistem Informasi Barang.pdb
