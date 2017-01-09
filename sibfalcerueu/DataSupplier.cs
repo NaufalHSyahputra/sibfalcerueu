@@ -287,7 +287,12 @@ namespace sibfalcerueu
 
         private void btninput_Click(object sender, EventArgs e)
         {
-            kode();
+            
+            txtkode.Text = "";
+            txtnama.Text = "";
+            txtalamat.Text = "";
+            txtemail.Text = "";
+            txtnohp.Text = "";
             txtnama.Enabled = true;
             txtalamat.Enabled = true;
             txtemail.Enabled = true;
@@ -297,6 +302,7 @@ namespace sibfalcerueu
             btnupdate.Enabled = false;
             btnsdelete.Enabled = false;
             btnexit.Enabled = false;
+            kode();
         }
 
         private void btnsupdate_Click_1(object sender, EventArgs e)

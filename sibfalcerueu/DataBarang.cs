@@ -78,7 +78,6 @@ namespace sibfalcerueu
         private void kode()
         {
             long hitung;
-            string urut;
             if (this.OpenConnection() == true)
             {
                 cmd = new MySqlCommand("select kode from barang where kode in(select max(kode) from barang) order by kode desc", conn);
@@ -88,16 +87,18 @@ namespace sibfalcerueu
                 {
                     hitung = Convert.ToInt64(rd[0].ToString().Substring(rd["kode"].ToString().Length - 3, 3)) + 1;
                     string joinstr = "000" + hitung;
-                    urut = "BRG" + joinstr.Substring(joinstr.Length - 3, 3);
+                    txtkode.Text = "BRG" + joinstr.Substring(joinstr.Length - 3, 3);
                 }
                 else
                 {
-                    urut = "BRG001";
+                    txtkode.Text = "BRG001";
                 }
                 rd.Close();
-                txtkode.Text = urut;
+                this.CloseConnection();
+            }else
+            {
+                txtkode.Text = "TET";
             }
-            this.CloseConnection();
         }
         private new void Select()
         {
@@ -333,7 +334,12 @@ namespace sibfalcerueu
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            kode();
+            txtnama.Text = "";
+            txtkategori.Text = "";
+            txtkode.Text = "";
+            txtstok.Text = "";
+            txtstokmin.Text = "";
+            txtsupplier.Text = "";
             txtnama.Enabled = true;
             txtkategori.Enabled = true;
             txtstok.Enabled = true;
@@ -344,6 +350,7 @@ namespace sibfalcerueu
             btnupdate.Enabled = false;
             btnsdelete.Enabled = false;
             btnexit.Enabled = false;
+            kode();
         }
 
         private void btnbatal_Click(object sender, EventArgs e)
@@ -351,8 +358,8 @@ namespace sibfalcerueu
             txtkode.Text = "";
             txtnama.Text = "";
             txtkategori.Text = "";
-            txtstok.Text = "1";
-            txtstokmin.Text = "1";
+            txtstok.Text = "";
+            txtstokmin.Text = "";
             txtsupplier.Text = "";
             txtkode.Enabled = false;
             txtnama.Enabled = false;
@@ -467,6 +474,7 @@ namespace sibfalcerueu
         }
         private void DataBarang_Load(object sender, EventArgs e)
         {
+           
             Select();
             Select2();
             Select3();

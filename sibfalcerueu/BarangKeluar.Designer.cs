@@ -269,6 +269,7 @@
             this.btnexit.Text = "Keluar";
             this.btnexit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnexit.UseSelectable = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // groupBox1
             // 

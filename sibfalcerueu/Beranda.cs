@@ -111,5 +111,11 @@ namespace sibfalcerueu
             LaporanBarangKeluar1 frm = new LaporanBarangKeluar1();
             frm.ShowDialog();
         }
+
+        private void metroTile13_Click(object sender, EventArgs e)
+        {
+            DataUser frm = new DataUser();
+            frm.ShowDialog();
+        }
     }
 }

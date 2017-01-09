@@ -55,3 +55,8 @@ C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sib
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\Sistem Informasi Barang.pdb
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\Sistem Informasi Barang.exe
 C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\Sistem Informasi Barang.pdb
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\sibfalcerueu.Testx.resources
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\Sistem Informasi Barang.exe.manifest
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\bin\Release\Sistem Informasi Barang.application
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\Sistem Informasi Barang.exe.manifest
+C:\Users\Naufal Syahputra\documents\visual studio 2015\Projects\sibfalcerueu\sibfalcerueu\obj\Release\Sistem Informasi Barang.application

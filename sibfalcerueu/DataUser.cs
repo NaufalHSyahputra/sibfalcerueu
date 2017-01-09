@@ -313,6 +313,9 @@ namespace sibfalcerueu
 
         private void btninput_Click(object sender, EventArgs e)
         {
+            txtkode.Text = "";
+            txtusername.Text = "";
+            txtpassword.Text = "";
             txtkode.Enabled = true;
             txtusername.Enabled = true;
             txtpassword.Enabled = true;

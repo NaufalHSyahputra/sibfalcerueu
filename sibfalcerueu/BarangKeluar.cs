@@ -184,8 +184,12 @@ namespace sibfalcerueu
 
         private void btninput_Click(object sender, EventArgs e)
         {
-            kode();
             txtkodeuser.Text = Login.kode;
+            txtkodeuser.Text = "";
+            txtkodebm.Text = "";
+            txtkodebagian.Text = "";
+            txtkodebarang.Text = "";
+            txtjumlah.Text = "";
             if (string.IsNullOrWhiteSpace(txtkodebagian.Text))
             {
                 txtkodebagian.Enabled = true;
@@ -202,6 +206,7 @@ namespace sibfalcerueu
             btnupdate.Visible = false;
             btnsimpan.Visible = true;
             btnbatal.Enabled = true;
+            kode();
         }
         private string getNama(string kode)
         {
@@ -495,6 +500,11 @@ namespace sibfalcerueu
         {
             MetroMessageBox.Show(this, "Silahkan Pilih Data Yang Ingin Dihapus", "Edit Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             statecellclick.Text = "DELETE";
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

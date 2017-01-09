@@ -185,7 +185,12 @@ namespace sibfalcerueu
 
         private void btninput_Click(object sender, EventArgs e)
         {
-            kode();
+            txtkodeuser.Text = "";
+            txtkodebm.Text = "";
+            txtfaktur.Text = "";
+            txtkodesupplier.Text = "";
+            txtkodebarang.Text = "";
+            txtjumlah.Text = "";
             txtkodeuser.Text = Login.kode;
             if (string.IsNullOrWhiteSpace(txtkodesupplier.Text))
             {
@@ -210,6 +215,7 @@ namespace sibfalcerueu
             btnupdate.Visible = false;
             btnsimpan.Visible = true;
             btnbatal.Enabled = true;
+            kode();
         }
         private string getNama(string kode)
         {

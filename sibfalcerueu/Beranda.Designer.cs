@@ -61,7 +61,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Location = new System.Drawing.Point(23, 63);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 3;
             this.metroTabControl1.Size = new System.Drawing.Size(606, 275);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
@@ -292,6 +292,7 @@
             this.metroTile13.Text = "Data User";
             this.metroTile13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile13.UseSelectable = true;
+            this.metroTile13.Click += new System.EventHandler(this.metroTile13_Click);
             // 
             // Beranda
             // 
